@@ -1,3 +1,5 @@
+
+
 const bookData = [
   {
     author: ["Burroughs, Edgar Rice"],
@@ -1665,3 +1667,5 @@ const bookData = [
     title: "My twin puppies",
   },
 ];
+
+export {bookData};
