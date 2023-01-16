@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--General Code
-    (1) Design choices are explained and documented in comments.
-    (2) DOM elements are styled via CSS.
-    3 to >0.0 pts
-    Full Marks
-    0 pts
-    No Marks
-    3 pts
-    This criterion is linked to a Learning OutcomeAdd Books
-    (1) Users can enter book title, author, subjects, language and add new Books.
-    (2) The Bookshelf instance is updated accordingly.
-    (3) The Bookshelf instance renders Books accurately.
-    3 to >0.0 pts
-    Full Marks
-    0 pts
-    No Marks
-    3 pts
-    This criterion is linked to a Learning OutcomeNavigation
-    (1) A Navigation Bar is included in the web app with links to other parts of the site e.g. "About", "Contact".
-    (2) No real information is required. Dummy data or lorum ipsum is fine!-->
     <title>Bookshelf</title>
+    <!--connect css file-->
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <h1>Library</h1>
+    <h1>Welcome to Our Library!</h1>
+    <!--user navigation bar-->
     <div id="navBar">
       <ul>
-        <li><button>About</button></li>
+        <li>
+          <span><button>About</button></span>
+        </li>
+        <li><button>Start</button></li>
+        <li><button>Help</button></li>
+        <li><button>FAQ</button></li>
         <li><button>Contact</button></li>
-        <li><button>Lorum</button></li>
-        <li><button>Ipsum</button></li>
+        <li><button>Stupid Sexy Flanders</button></li>
       </ul>
     </div>
     <!-- add forms to allow user to enter book title, author, subject, and language -->
-    <form onsumbit="return false">
+    <form>
       <input type="text" name="title" placeholder="Title" />
       <input type="text" name="author" placeholder="Author" />
-      <input type="text" name="subjects" placeholder="Subjects" />
-      <input type="text" name="language" placeholder="language" />
-      <!-- add submit button for user-->
-      <button type="submit" onclick="addBook(event)">submit</button>
+      <input type="text" name="subject" placeholder="Subject" />
+      <input type="text" name="language" placeholder="Language" />
     </form>
-
+    <!-- add submit button-->
+    <button type="submit" id="add_book">submit</button>
+    <!--create divs to grab title, author, language and subjects-->
+    <div class="grab">
+      <div id="title"></div>
+      <div id="author"></div>
+      <div id="subject"></div>
+      <div id="language"></div>
+    </div>
+    <!--connect js file-->
     <script src="js/index.js" type="module"></script>
   </body>
 </html>
